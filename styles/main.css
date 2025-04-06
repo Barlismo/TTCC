@@ -1,0 +1,46 @@
+/* styles/main.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically on small screens */
+    gap: 20px;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row; /* Arrange sections horizontally on larger screens */
+        flex-wrap: wrap; /* Allow sections to wrap if needed */
+    }
+
+    section {
+        flex: 1; /* Distribute space evenly among sections */
+    }
+}
+
+/* styles/components/stat-block.css */
+.stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stat-row label {
+    width: 100px;
+    margin-right: 10px;
+}
