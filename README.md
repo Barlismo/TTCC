@@ -4,7 +4,7 @@
 1. Project Structure and Modularity
 - **Component-Based Architecture:** We'll use a component-based approach, which is perfect for modularity. Think of each part of the character sheet (e.g., stats, skills, inventory) as its own independent component.
 - **Directory Structure:** A well-organized directory structure will make it easy to manage your code. Here's a suggestion:
-
+```
 character-creator/
 ├── index.html          # Main HTML file
 ├── styles/             # CSS files
@@ -18,6 +18,7 @@ character-creator/
 │       ├── StatBlock.js
 │       └── SkillList.js
 └── assets/             # Images, fonts, etc.
+```
 
 2. Core Technologies
 - **HTML5:** For the structure of the website.
