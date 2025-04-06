@@ -1,0 +1,11 @@
+/* styles/components/stat-block.css */
+.stat-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stat-row label {
+    width: 100px;
+    margin-right: 10px;
+}

@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Character Creator</title>
+    <title>TTCC</title>
     <link rel="stylesheet" href="styles/main.css">
-    <!-- Component-specific styles will be added here -->
+    <link rel="stylesheet" href="styles/components/stat-block.css">
 </head>
 <body>
     <header>
-        <h1>Character Creator</h1>
+        <h1>Table Top Character Creator</h1>
     </header>
 
     <main>
         <section id="character-info">
-            <!-- Character name, class, etc. -->
+            <h2>Character Information</h2>
+            <div class="character-info-row">
+                <label for="character-name">Character Name:</label>
+                <input type="text" id="character-name" placeholder="Enter character name" value="">
+            </div>
+            <div class="character-info-row">
+                <label for="character-class">Class:</label>
+                <input type="text" id="character-class" placeholder="Enter character class" value="">
+            </div>
+            <div class="character-info-row">
+                <label for="character-level">Level:</label>
+                <input type="number" id="character-level" placeholder="Enter character level" value="1" min="1">
+            </div>
         </section>
 
         <section id="stat-block">
@@ -22,12 +34,49 @@
             <div class="stat-row">
                 <label for="strength-input">Strength:</label>
                 <input type="number" id="strength-input" value="10">
+                <span class="error-message"></span>
             </div>
-            <!-- Add other stats here -->
+            <div class="stat-row">
+                <label for="intelligence-input">Intelligence:</label>
+                <input type="number" id="intelligence-input" value="10">
+                <span class="error-message"></span>
+            </div>
+            <div class="stat-row">
+                <label for="dexterity-input">Dexterity:</label>
+                <input type="number" id="dexterity-input" value="10">
+                <span class="error-message"></span>
+            </div>
+            <div class="stat-row">
+                <label for="wisdom-input">Wisdom:</label>
+                <input type="number" id="wisdom-input" value="10">
+                <span class="error-message"></span>
+            </div>
+            <div class="stat-row">
+                <label for="constitution-input">Constitution:</label>
+                <input type="number" id="constitution-input" value="10">
+                <span class="error-message"></span>
+            </div>
+            <div class="stat-row">
+                <label for="charisma-input">Charisma:</label>
+                <input type="number" id="charisma-input" value="10">
+                <span class="error-message"></span>
+            </div>
         </section>
 
         <section id="skill-list">
-            <!-- Acrobatics, Stealth, etc. -->
+            <h2>Skills</h2>
+            <div class="skill-row">
+                <label for="acrobatics-input">Acrobatics:</label>
+                <input type="number" id="acrobatics-input" value="0">
+            </div>
+            <div class="skill-row">
+                <label for="athletics-input">Athletics:</label>
+                <input type="number" id="athletics-input" value="0">
+            </div>
+            <div class="skill-row">
+                <label for="stealth-input">Stealth:</label>
+                <input type="number" id="stealth-input" value="0">
+            </div>
         </section>
 
         <section id="inventory">
@@ -36,10 +85,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 My Character Creator</p>
+        <p>&copy; Table Top Character Creator</p>
     </footer>
 
     <script src="scripts/main.js"></script>
-    <!-- Component-specific scripts will be added here -->
+    <script src="scripts/components/StatBlock.js"></script>
 </body>
 </html>
